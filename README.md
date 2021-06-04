@@ -137,5 +137,31 @@ method Get
                 "listItem": "[but, sach, vo]",
                 "cost": "10"
             }
+    shipper_confirm: method=post
+    request: "data":{
+            "claimDate": "2021-07-21",
+            "idShipper": "2",
+            "id_bill": "15"
+            }
+    response:  định dạng response:{
+                "success" hoặc error
+  }
+  shipper_finish: method=post
+  request: "data":{
+            "finishDate": "2021-07-21",
+            "id_bill": "15"
 
+        }
+    response:  định dạng response:{
+                "success" hoặc error
+  }    
+   shipper_return: method=post
+    request: "data":{
+            "billStatus": "4",
+            "id_bill": "15"
+
+        }
+    response:  định dạng response:{
+                "success" hoặc error
+  }    
 
