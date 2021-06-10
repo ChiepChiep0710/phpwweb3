@@ -2,8 +2,8 @@
         try{
                 require 'C:\xampp\htdocs\web3\db\dbHelper.php';
         $data= json_decode($_POST['data']);
-        $sql="UPDATE tblbill SET fromAdd='$data->fromAdd', toAdd='$data->toAdd', fromDate='$data->fromDate',
-                                      isCOD='$data->isCOD',  billStatus='$data->billStatus', 
+        $sql="UPDATE tblbill SET fromAdd='$data->fromadd', toAdd='$data->toadd', fromDate='$data->startdate',
+                                       billStatus='$data->billStatus', recevier='$data->recevier', idCityFr='$data->idCityFr', idCityTo='$data->idCityTo',
                                         listItem='$data->listItem', cost='$data->cost'  
                                         WHERE id = '$data->id_bill'";
       //  echo $sql;

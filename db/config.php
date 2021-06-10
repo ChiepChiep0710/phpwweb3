@@ -2,5 +2,5 @@
     define('HOST' , 'Localhost');
     define('USERNAME','root');
     define('PASSWORD', '');
-    define('DATABASE', 'web3sql');
+    define('DATABASE', 'web3new');
 ?>
